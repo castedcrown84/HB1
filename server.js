@@ -19,8 +19,6 @@ app.use(require('./controllers/dish-routes'));
 
 
 
-
-
 sequelize.sync({force:true}).then(() => {
 
 app.listen(Port, ()=> {
