@@ -19,11 +19,11 @@ app.use(require('./controllers/dish-routes'));
 
 
 
-sequelize.sync({force:true}).then(() => {
+sequelize.sync({force:false}).then(() => {
 
 app.listen(Port, ()=> {
 
-`Listening to server!`
+console.log(`Listening to server!`)
 
 })
 

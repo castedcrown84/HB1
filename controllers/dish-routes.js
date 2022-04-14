@@ -11,7 +11,7 @@ const dishdata = await Dish.findAll();
 //Serialize the Data and converted it to a plain object
 const dishes = dishdata.map((dish) => { dish.get({plain:true})}  )
 
-res.render('all', dishes)
+res.render('all', {dishes})
 
 }catch(err){
 
@@ -45,3 +45,6 @@ res.render('dish', {dish})
 
 
 })
+
+
+module.exports = router

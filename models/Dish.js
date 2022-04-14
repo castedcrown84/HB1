@@ -23,7 +23,7 @@ Dish.init(
 
         },
 
-        discription:{
+        description:{
 
 
             type: DataTypes.STRING,
@@ -31,7 +31,7 @@ Dish.init(
 
         },
 
-        guestname:{
+        guest_name:{
 
             type:DataTypes.STRING,
             allowNull:false
